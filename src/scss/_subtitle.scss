@@ -1,0 +1,20 @@
+.subtitle {
+   margin-top: 19px;
+   text-align: center;
+   font-size: 17px;
+   line-height: 21px;
+   color: #222222;
+}
+
+.subtitle_white {
+   color: white;
+   position: relative;
+}
+
+.subtitle_xs {
+   @media (max-width: $xs) {
+      margin-top: 0;
+      font-weight: 400;
+      font-size: 14px;
+   }
+}

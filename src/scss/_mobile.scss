@@ -1,0 +1,110 @@
+.mobile {
+   min-height: 864px;
+   padding: 48px 0 80px 0;
+   background: url(../img/bg/mobile_bg.png) center (center / cover) no-repeat;
+
+   @media (max-width: $xs) {
+      padding: 25px 0 13px;
+   }
+   .row {
+      margin-top: 32px;
+   }
+
+   &_row {
+      width: 320px;
+      height: 280px;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 19px;
+
+      @media (max-width: $xl) {
+         width: 270px;
+         height: 280px;
+      }
+      @media (max-width: $lg) {
+         width: 23vw;
+         min-width: 225px;
+         height: 290px;
+      }
+      @media (max-width: $xs) {
+         width: 254px;
+         height: 290px;
+         margin-bottom: 30px;
+      }
+
+   }
+
+   &_subtitle {
+      padding: 82.5px 11px 140px;
+      font-weight: 400;
+      font-size: 24px;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      text-align: center;
+
+      @media (max-width: $lg) {
+         font-weight: 400;
+         font-size: 18px;
+      }
+   }
+
+   &_circle {
+      width: 29px;
+      height: 29px;
+      background: #000000;
+      border-radius: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      position: absolute;
+      bottom: 40px;
+
+      &:hover {
+         opacity: 1;
+         background:white;
+         transition: 0.5s;
+      }
+   }
+
+   &_plus {
+      background: $bg_color;
+      height: 14px;
+      width: 2px;
+      position: relative;
+
+      &::after {
+         content: "";
+         height: 2px;
+         width: 14px;
+         background: $bg_color;
+         position: absolute;
+         left: -6px;
+         top: 6px;
+
+      }
+   }
+
+   &_bg-1 {
+      background: url(../img/bg/mobile_1.png) center (center / cover) no-repeat;
+      
+   }
+   &_bg-2 {
+      background: url(../img/bg/mobile_2.png) center (center / cover) no-repeat;
+   }
+   &_bg-3 {
+      background: url(../img/bg/mobile_3.png) center (center / cover) no-repeat;
+   }
+   &_bg-4 {
+      background: url(../img/bg/mobile_4.png) center (center / cover) no-repeat;
+   }
+   &_bg-5 {
+      background: url(../img/bg/mobile_5.png) center (center / cover) no-repeat;
+   }
+   &_bg-6 {
+      background: url(../img/bg/mobile_6.png) center (center / cover) no-repeat;
+   }
+}
+

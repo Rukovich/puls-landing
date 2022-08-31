@@ -1,0 +1,29 @@
+//Компонент .label
+.label {
+   padding: 0.5em 1em;
+   font-weight: 400;
+   font-size: 11px;
+   text-transform: uppercase;
+   color: #ffffff;
+   width: 110px;
+   min-height: 27px;
+   background: #000000;
+   margin: 0 auto;
+   margin-bottom: 33px;
+   text-align: center;
+
+}
+
+.label_white {
+   background: white;
+   color: black;
+   position: relative;
+
+}
+
+.label_xs {
+   @media (max-width: $xs) {
+      margin-bottom: 13px;
+   }
+
+}

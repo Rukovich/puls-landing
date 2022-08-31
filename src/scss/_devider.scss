@@ -1,0 +1,12 @@
+.divider {
+   max-width: 299px;
+   height: 4px;
+   background-color: #1fbad6;
+   margin: 0 auto;
+   margin-top: 14px;
+
+   @media (max-width: $lg) {
+      max-width: 255px;
+      margin-top: 24px;
+   }
+}

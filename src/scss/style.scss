@@ -1,15 +1,14 @@
 @import '_vars';
-@import '_navigation';
-@import '_subheader';
+@import '_header';
 @import '_promo';
-@import '_reasons';
-@import '_label';
-@import '_title';
-@import '_subtitle';
-@import '_mobile';
-@import '_choise';
-@import '_require';
-@import '_world';
-@import '_devider';
-@import '_footer';
-@import '_hamburger';
+@import '_button';
+
+
+* {
+  font-family: Museo Sans Cyrl;
+}
+
+.container {
+  max-width: 950px;
+  margin: 0 auto;
+}

@@ -1,0 +1,13 @@
+.mainTitle {
+  text-transform: uppercase;
+  color: black;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 54px;
+
+  &_left {
+    color: #FFFFFF;
+    text-align: left;
+    line-height: 42px;
+  }
+}

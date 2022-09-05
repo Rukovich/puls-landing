@@ -6,27 +6,3 @@ $xs: 575px;
 $md: 767px;
 $lg: 991px;
 $xl: 1200px;
-
-
-//mixins
-@mixin btn_hover {
-   &:hover {
-      background-image: none;
-      background-color: $bg_color;
-   }
-}
-
-//visible
-.xs-hiden {
-   @media (max-width: 767px) {
-      display: none;
-   }
-}
-
-.xs-visible {
-   display: none;
-
-   @media (max-width: 767px) {
-      display: block;
-   }
-}

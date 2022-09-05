@@ -5,4 +5,14 @@
   line-height: 30px;
   color: #0D0D0D;
   text-align: center;
+
+  @media (max-width: $md) {
+    font-size: 25px;
+    line-height: 25px;
+  }
+
+  @media (max-width: $md) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }

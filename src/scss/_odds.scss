@@ -1,12 +1,26 @@
 .odds {
   background: #F6F6F6;
   height: min(100%, 470px);
-  padding-block: 70px 82px; //Отступы сверху и снизу
+  padding-block: 70px 82px; //Отступы сверху и 
+
+  @media (max-width: $md) {
+    padding-block: 50px 62px;
+  }
 
   &__wrapper {
     display: flex;
     justify-content: space-around;
     margin-top: 60px;
+
+    @media (max-width: $md) {
+      margin-top: 40px;
+    }
+
+    @media (max-width: $xs) {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
   }
 
   &__item {
@@ -14,11 +28,20 @@
     padding-inline: 10px;
     width: 269px;
     text-align: center;
+
+    @media (max-width: $md) {
+      width: 32wv;
+    }
   }
 
   &__img {
     width: 70px;
     height: 70px;
+
+    @media (max-width: $md) {
+      width: 50px;
+      height: 50px;
+    }
   }
 
   &__tittle {
@@ -27,6 +50,14 @@
     line-height: 29px;
     color: #0D0D0D;
     margin-top: 35px;
+
+    @media (max-width: $md) {
+      font-size: 15px;
+    }
+
+    @media (max-width: $xs) {
+      margin-top: 10px;
+    }
   }
 
   &__text {
@@ -35,5 +66,14 @@
     font-size: 14px;
     line-height: 18px;
     color: #0D0D0D;
+
+    @media (max-width: $md) {
+      font-size: 12px;
+      line-height: 12px;
+    }
+
+    @media (max-width: $xs) {
+      margin-top: 10px;
+    }
   }
 }

@@ -3,6 +3,18 @@
   justify-content: space-between;
   align-items: center;
 
+  @media (max-width: $md) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: $xs) {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+
   &__logo {
     width: 250px;
 
@@ -18,16 +30,35 @@
     display: block;
     text-align: center;
 
+    @media (max-width: $md) {
+      text-align: end;
+    }
+
+    @media (max-width: $xs) {
+      text-align: center;
+    }
+
     span {
       font-family: 'MuseoModerno';
       font-size: 18px;
     }
+
   }
 
   &__contacts {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @media (max-width: $md) {
+      grid-column-start: 1;
+      grid-column-end: 4;
+      margin-top: 20px;
+    }
+
+    @media (max-width: $xs) {
+      margin-top: 0px;
+    }
   }
 
   &__phone {

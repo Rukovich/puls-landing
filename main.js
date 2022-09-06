@@ -6,3 +6,6 @@ import './src/css/bootstrap-reboot.css'
 // scss
 import './src/scss/style.scss'
 
+//js
+import './src/js/script.js'
+

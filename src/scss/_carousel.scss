@@ -1,3 +1,47 @@
 .carousel {
-  padding-block: 81px;
+  padding-block: 108px 108px;
+  margin-inline: auto;
+  max-width: 970px;
+
+  @media (max-width: $md) {
+    padding-block: 60px 60px;
+  }
+
+  &__control {
+    opacity: 1;
+
+    :hover {
+      opacity: 0.5;
+      transition: 0.1s;
+    }
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+    max-width: 750px;
+    width: 80vw;
+    margin: 0 auto;
+  }
+
+  &__arrow {
+    width: 30px;
+    height: 50px;
+
+    @media (max-width: $lg) {
+      width: 15px;
+      height: 25px;
+    }
+  }
+
+  &__arrow_l {
+    background-image: url(../img/arrow/left.svg);
+  }
+
+  &__arrow_r {
+    background-image: url(../img/arrow/right.svg);
+  }
 }

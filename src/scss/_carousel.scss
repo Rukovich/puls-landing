@@ -21,10 +21,11 @@
     align-items: center;
   }
 
-  &__item {
+  &__img {
     max-width: 750px;
-    width: 80vw;
+    max-height: 550px;
     margin: 0 auto;
+    width: 80vw;
   }
 
   &__arrow {

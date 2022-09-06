@@ -3,6 +3,10 @@
   padding-block: 100px 92px;
   background: url(../img/bg/bg2.png) center (center / cover) no-repeat;
 
+  @media (max-width: $xs) {
+    min-height: 400px;
+  }
+
   &__descr {
     margin-top: 8px;
     font-weight: 500;
@@ -10,10 +14,15 @@
     line-height: 30px;
     color: #FFFFFF;
     max-width: 426px;
+    display: block;
 
     @media (max-width: $xs) {
       font-size: 16px;
       line-height: 16px;
+      text-align: center;
+      margin: 0 auto;
+      padding-inline: 20px;
+      margin-bottom: 20px;
     }
   }
 }

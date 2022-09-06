@@ -10,4 +10,9 @@
     text-align: left;
     line-height: 42px;
   }
+
+  @media (max-width: $xs) {
+    font-size: 22px;
+    line-height: 30px;
+  }
 }

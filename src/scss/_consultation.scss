@@ -10,5 +10,10 @@
     line-height: 30px;
     color: #FFFFFF;
     max-width: 426px;
+
+    @media (max-width: $xs) {
+      font-size: 16px;
+      line-height: 16px;
+    }
   }
 }

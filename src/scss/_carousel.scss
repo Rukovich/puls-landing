@@ -22,10 +22,24 @@
   }
 
   &__img {
-    max-width: 750px;
-    max-height: 550px;
+    width: 750px;
+    height: 550px;
     margin: 0 auto;
-    width: 80vw;
+
+    @media (max-width: $lg) {
+      width: 650px;
+      height: 450px;
+    }
+
+    @media (max-width: $md) {
+      width: 550px;
+      height: 350px;
+    }
+
+    @media (max-width: $xs) {
+      width: 220px;
+      height: 170px;
+    }
   }
 
   &__arrow {

@@ -11,7 +11,6 @@
     margin-bottom: 0px;
     padding-left: 0px;
 
-
   }
 
   &__tab {
@@ -20,7 +19,7 @@
     border: 2px solid #d0d0d0;
     font-weight: 400;
     font-size: 18px;
-    line-height: 48px;
+    line-height: 50px;
     text-transform: uppercase;
     color: #6B6B6B;
     text-align: center;
@@ -33,11 +32,21 @@
       border: none
     }
 
-    & span {
+    & div {
       display: block;
-      transform: skew(25deg);
       padding-inline: 15px;
 
+      & span {
+        display: inline-block;
+        transform: skew(25deg);
+      }
+    }
+
+    & .active {
+      border: none;
+      background-color: $main_color;
+      color: white;
+      // transform: skew(25deg);
     }
   }
 
@@ -49,9 +58,10 @@
     grid-row-gap: 19px;
   }
 
-  &_active {
-    background: $main_color;
-    color: white;
-    border: none;
-  }
+  // &_active {
+  //   background: $main_color;
+  //   color: white;
+  //   border: none;
+  // }
+
 }

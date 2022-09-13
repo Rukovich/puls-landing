@@ -41,5 +41,11 @@
     width: 135px;
     height: 44px;
     font-size: 14px;
+
+    @media (max-width: $xs) {
+      width: 120px;
+      height: 30px;
+      font-size: 14px;
+    }
   }
 }

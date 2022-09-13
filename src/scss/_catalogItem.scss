@@ -5,6 +5,11 @@
   padding: 20px 20px 26px 20px;
   overflow: hidden;
 
+  @media (max-width: $md) {
+    max-width: 250px;
+    min-height: 350px;
+  }
+
   &__img {
     max-width: 100%;
     height: 200px;
@@ -85,9 +90,8 @@
 
   &__content {
     width: 50%;
-    // margin-right: 20px;
     margin-right: 0px;
-    transform: translateX(-100%);
+    transform: translateX(-110%);
     transition: 0.5s all;
 
     &_active {
@@ -121,6 +125,10 @@
       color: #555555;
       position: relative;
 
+      @media (max-width: $lg) {
+        margin-bottom: 10px;
+      }
+
       &::before {
         content: '';
         position: absolute;
@@ -151,5 +159,4 @@
 
     }
   }
-
 }

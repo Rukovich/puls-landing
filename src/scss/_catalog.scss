@@ -11,6 +11,9 @@
     margin-bottom: 0px;
     padding-left: 0px;
 
+    @media (max-width: $md) {
+      margin-top: 40px;
+    }
   }
 
   &__tab {
@@ -26,6 +29,13 @@
     transform: skew(-25deg);
     cursor: pointer;
     transition: 0.4s all;
+
+    @media (max-width: $md) {
+      width: 160px;
+      height: 40px;
+      line-height: 40px;
+      font-size: 14px;
+    }
 
     &:hover {
       box-shadow: 3px 3px 20px $main_color;
@@ -46,7 +56,6 @@
       border: none;
       background-color: $main_color;
       color: white;
-      // transform: skew(25deg);
     }
   }
 
@@ -56,12 +65,19 @@
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 17px;
     grid-row-gap: 19px;
+    justify-items: center;
+
+
+    @media (max-width: $lg) {
+      grid-template-columns: repeat(2, auto);
+      justify-content: center;
+    }
+
+    @media (max-width: $md) {
+      grid-template-columns: repeat(1, auto);
+      justify-content: center;
+    }
   }
 
-  // &_active {
-  //   background: $main_color;
-  //   color: white;
-  //   border: none;
-  // }
 
 }

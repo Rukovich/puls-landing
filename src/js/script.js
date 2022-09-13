@@ -1,12 +1,8 @@
 
-catalog.onclick = function (event) {
-  if (event.target.className != 'catalogItem__back') return;
-  let catList = event.target.closest('.catalogItem__list');
-  catList.classList.remove('catalogItem__list_active');
-};
-
-/*
-Здесь я пытался написать событие которое при нажатии на класс
-.catalogItem__back будет добавлять к классу .catalog__content
- класс catalog__content_active
-*/
+const cards = document.querySelectorAll('.catalogItem');
+cards.forEach(card => {
+  card.addEventListener('click', () => {
+    card.querySelector('.catalogItem__content').classList.toggle('catalogItem__content_active');
+    card.querySelector('.catalogItem__list').classList.toggle('catalogItem__list_active');
+  })
+})

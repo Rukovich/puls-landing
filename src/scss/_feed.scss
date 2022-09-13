@@ -1,0 +1,44 @@
+.feed {
+  min-height: 920px + 48px;
+
+  &__card {
+    display: flex;
+    justify-content: start;
+    margin-top: 60px;
+  }
+
+  &__text {
+    max-width: 650px;
+  }
+
+  &__img {
+    width: 169px;
+    height: 169px;
+    margin-right: 61px;
+  }
+
+  &__name {
+    font-size: 18px;
+    line-height: 18px;
+    color: #0D0D0D;
+    font-weight: 700;
+  }
+
+  &__count {
+    color: #646464;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  &__descr {
+    color: #0D0D0D;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+
+    & span {
+      font-family: "MuseoModerno";
+    }
+  }
+}

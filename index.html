@@ -555,8 +555,54 @@
       </div>
     </div>
   </section>
+  <footer class="footer">
+    <div class="footer__map">
+      <script type="text/javascript" charset="utf-8" async
+        src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Afc0c80cb9759254e7e27050c4fd8d02165170b6cef87dfb5c89f1d602ed40bf3&amp;width=100%25&amp;height=630&amp;lang=ru_RU&amp;scroll=false"></script>
+    </div>
+    <div class="footer__info">
+      <address class="footer__addr">Москва, Мясницкий проезд, д.3с1</address>
+      <a class="footer__phone" href="tel:84999228974">8 (499) 922-89-74</a>
+      <div class="footer__social">
+        <a href="#" class="footer__social-item"><img src="src/img/icons/facebook.svg" alt="icon"></a>
+        <a href="#" class="footer__social-item"><img src="src/img/icons/inst.svg" alt="icon"></a>
+        <a href="#" class="footer__social-item"><img src="src/img/icons/pint.svg" alt="icon"></a>
+      </div>
+    </div>
+  </footer>
 
+  <!-- Button trigger modal -->
+  <button type="button" class="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+    Заказать
+  </button>
 
+  <!-- Modal -->
+  <div class="modal modal-form" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <form class="feedForm" action="#">
+          <input name="name" required placeholder="Ваше имя" type="text">
+          <input name="phone" required placeholder="Ваш телефон" type="number">
+          <input name="email" required placeholder="Ваш E-mail" type="email">
+          <button class="button button_submit">заказать консультацию</button>
+        </form>
+
+        <div class="modal-footer">
+          <button type="button" class="button" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Understood</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
 
 </body>
 

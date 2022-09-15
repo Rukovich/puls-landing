@@ -1,6 +1,10 @@
 .catalog {
   padding-bottom: 100px;
 
+  @media (max-width: $md) {
+    padding-bottom: 70px;
+  }
+
   &__tabs {
     margin-top: 70px;
     list-style: none;

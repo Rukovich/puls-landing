@@ -1,5 +1,6 @@
 .feed {
-  min-height: 920px + 48px;
+  min-height: 920px;
+  padding-bottom: 48px;
 
   &__card {
     display: flex;

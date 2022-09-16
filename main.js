@@ -8,4 +8,5 @@ import './src/scss/style.scss'
 
 //js
 import './src/js/script.js'
+import './src/js/popup'
 

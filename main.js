@@ -7,6 +7,6 @@ import './src/css/bootstrap-reboot.css'
 import './src/scss/style.scss'
 
 //js
-import './src/js/script.js'
+import './src/js/cards.js'
 import './src/js/popup'
 

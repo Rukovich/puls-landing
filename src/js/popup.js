@@ -1,14 +1,14 @@
 
-let popupBg = document.querySelector('.popup__bg');
-let popup = document.querySelector('.popup');
-let openPopupButtons = document.querySelectorAll('.open-popup');
-let closePopupButton = document.querySelector('.close-popup');
+const popupBg = document.querySelector('.popup__bg');
+const popup = document.querySelector('.popup');
+const openPopupButtons = document.querySelectorAll('.open-popup');
+const closePopupButton = document.querySelector('.close-popup');
 
-/* popup покупки */
-let popupBg_bue = document.querySelector('.popup__bg_bue');
-let popup_bue = document.querySelector('.popup_bue');
-let openPopupButtons_bue  = document.querySelectorAll('.open-popup_bue')
-let closePopupButton_bue = document.querySelector('.close-popup_bue');
+/* popup с покупкой */
+const popupBg_bue = document.querySelector('.popup__bg_bue');
+const popup_bue = document.querySelector('.popup_bue');
+const openPopupButtons_bue  = document.querySelectorAll('.open-popup_bue')
+const closePopupButton_bue = document.querySelector('.close-popup_bue');
 
 openPopupButtons.forEach((button) => {
   button.addEventListener('click', (e) => {
@@ -21,6 +21,8 @@ openPopupButtons.forEach((button) => {
 closePopupButton.addEventListener('click', () => {
   popupBg.classList.remove('active');
   popup.classList.remove('active');
+  popupBg_bue.classList.remove('active'); //popup с покупкой
+  popup_bue.classList.remove('active'); //popup с покупкой
 });
 
 document.addEventListener('click', (e) => {
@@ -30,7 +32,7 @@ document.addEventListener('click', (e) => {
   }
 });
 
-/* popup покупки */
+/* popup с покупкой */
 openPopupButtons_bue.forEach((button) => {
   button.addEventListener('click', (e) => {
     e.preventDefault();
@@ -42,12 +44,5 @@ openPopupButtons_bue.forEach((button) => {
 closePopupButton_bue.addEventListener('click', () => {
   popupBg_bue.classList.remove('active');
   popup_bue.classList.remove('active');
-});
-
-document.addEventListener('click', (e) => {
-  if (e.target === popupBg_bue) {
-    popupBg_bue.classList.remove('active');
-    popup_bue.classList.remove('active');
-  }
 });
 /* popup покупки */

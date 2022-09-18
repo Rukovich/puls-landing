@@ -1,4 +1,4 @@
 
 ## look:
 
-https://elaborate-hotteok-310d55.netlify.app/
+https://puls-landing.netlify.app/

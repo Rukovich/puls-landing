@@ -9,4 +9,5 @@ import './src/scss/style.scss'
 //js
 import './src/js/cards.js'
 import './src/js/popup'
+import './src/js/maskInput.js'
 

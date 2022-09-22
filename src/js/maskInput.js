@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    let eventCalllback = function (e) {
+    let eventCallback = function (e) {
         let el = e.target,
             clearVal = el.dataset.phoneClear,
             pattern = el.dataset.phonePattern,
@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let phone_inputs = document.querySelectorAll('[data-phone-pattern]');
     for (let elem of phone_inputs) {
         for (let ev of ['input', 'blur', 'focus']) {
-            elem.addEventListener(ev, eventCalllback);
+            elem.addEventListener(ev, eventCallback);
         }
     }
 });

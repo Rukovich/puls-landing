@@ -15,3 +15,5 @@ cards.forEach(card => {
         content.classList.add('catalogItem__content_active')
     }
 })
+
+

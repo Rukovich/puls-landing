@@ -6,7 +6,9 @@
   width: 100%;
 
   @media (max-width: $xs) {
-    margin: 0 auto;
+    margin-inline: auto;
+    width: 90%;
+    max-width: 300px
   }
 
   & input {
@@ -29,4 +31,8 @@
       font-size: 12px;
     }
   }
+}
+
+.feedForm_modal {
+  margin-top: 27px;
 }

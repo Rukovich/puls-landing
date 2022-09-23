@@ -16,6 +16,13 @@
   transform: translate(-50%, -50%) scale(0);
   transition: 0.5s all;
 
+  @media (max-width: $xs) {
+    max-width: 400px;
+    width: 90vw;
+    text-align: center;
+    padding-inline: 10px;
+  }
+
   &__header {
     font-weight: 700;
     font-size: 19px;

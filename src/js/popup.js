@@ -54,6 +54,7 @@ const cards = document.querySelectorAll('.catalogItem');
 
 cards.forEach(card => {
   const subtitle = card.querySelector('.catalogItem__subtitle')
+
   card.querySelector('.open-popup_bue').onclick = () => {
     let nameEl = subtitle.textContent;
     document.getElementById('name').textContent = nameEl;

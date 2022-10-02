@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -147,27 +147,27 @@
         Каталог пульсометров
       </h2>
 
-      <ul class="nav catalog__tabs" id="pills-tab">
-        <li class="catalog__tab">
+      <div class="nav catalog__tabs" id="pills-tab">
+        <div class="catalog__tab">
           <div id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" aria-selected="true">
             <span>Для фитнеса</span>
           </div>
-        </li>
+        </div>
 
-        <li class="catalog__tab">
+        <div class="catalog__tab">
           <div id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" role="tablist"
             aria-selected="false">
             <span>Для бега</span>
           </div>
-        </li>
+        </div>
 
-        <li class="catalog__tab">
+        <div class="catalog__tab">
           <div id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" role="tablist"
             aria-selected="false">
             <span>Для триатлона</span>
           </div>
-        </li>
-      </ul>
+        </div>
+      </div>
 
       <div class="tab-content" id="pills-tabContent">
         <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
@@ -340,14 +340,9 @@
                 <button class="button button_mini open-popup_bue">КУПИТЬ</button>
               </div>
             </div>
-
           </div>
-
         </div>
-
-
         <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-
           <div class="catalog__content">
             <div class="catalogItem" data-aos="fade-right">
               <div class="catalogItem__wrapper">
@@ -357,13 +352,15 @@
                   <div class="catalogItem__descr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
                   <div class="catalogItem__link">ПОДРОБНЕЕ</div>
                 </div>
-                <ul class="catalogItem__list">
-                  <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</li>
-                  <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
-                  <li>Также Вы увидите информацию о расходе калорий за тренировку;</li>
-                  <li>Вы сможете посмотреть данные по 10 тренировкам.</li>
+                <div class="catalogItem__list">
+                  <ul class="catalogItem__ul">
+                    <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</li>
+                    <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
+                    <li>Также Вы увидите информацию о расходе калорий за тренировку;</li>
+                    <li>Вы сможете посмотреть данные по 10 тренировкам.</li>
+                  </ul>
                   <div class="catalogItem__back">назад</div>
-                </ul>
+                </div>
               </div>
               <hr>
               <div class="catalogItem__footer">

@@ -1,9 +1,20 @@
-@import '_vars';
-@import '_header';
-@import '_promo';
-@import '_button';
-@import '_odds';
-@import '_title';
+@import 'vars';
+@import 'animations';
+
+* {
+  font-family: Museo Sans Cyrl;
+}
+
+.container {
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+@import 'header';
+@import 'promo';
+@import 'button';
+@import 'odds';
+@import 'title';
 @import 'consultation';
 @import 'mainTitle';
 @import 'forms';
@@ -14,12 +25,3 @@
 @import 'footer';
 @import 'popup';
 @import 'pageup';
-
-* {
-  font-family: Museo Sans Cyrl;
-}
-
-.container {
-  max-width: 950px;
-  margin: 0 auto;
-}

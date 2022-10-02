@@ -1,6 +1,6 @@
 'use strict';
 
-function scroll () {
+function scroll() {
     function trackScroll() {
         const scrolled = window.scrollY;
         const coords = document.documentElement.clientHeight;
@@ -16,7 +16,7 @@ function scroll () {
     const goTopBtn = document.querySelector('.pageup');
 
     window.addEventListener('scroll', trackScroll);
-    goTopBtn.addEventListener('click', backToTop);
+    // goTopBtn.addEventListener('click', backToTop);
 }
 
 scroll()

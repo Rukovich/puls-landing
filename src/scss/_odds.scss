@@ -77,3 +77,21 @@
     }
   }
 }
+
+.odds__img_animated-heart {
+  &:hover {
+    animation: heartbeat 1.5s ease infinite;
+  }
+}
+
+.odds__img_animated-cup {
+  &:hover {
+    animation: animated-cup 1.5s both
+  }
+}
+
+.odds__img_animated-shoes {
+  &:hover {
+    animation: animated-shoes 1.5s forwards
+  }
+}
